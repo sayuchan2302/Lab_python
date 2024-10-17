@@ -1,4 +1,4 @@
-from Lab3.Shape import Shape
+from Lab3.Task1.Shape import Shape
 
 
 class Square(Shape):

@@ -1,4 +1,4 @@
-from Lab3.Point import Point
+from Lab3.Task1.Point import Point
 from abc import ABC, abstractmethod
 
 class Shape(ABC):
