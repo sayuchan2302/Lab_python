@@ -69,6 +69,8 @@ class Order:
         self.__customer = customer
         self.__items = items
 
+    def __repr__(self):
+        return f"Order(oid={self.__oid}, customer={self.__customer.getCid()}, items={[(item.getQuantity(), item.getP()) for item in self.__items]})"
     def getOid(self):
         return self.__oid
 
@@ -205,5 +207,5 @@ print(om.get3ProductRecent())
 print(om.getProductWithTier(2, "2024-02-01", "2024-04-01"))
 print(om.getOrderByDate("15/03/2024"))
 print(om.totalCostInDate(2, 2024))
-print(om.getStatisticsByCustomer)
+print(om.getStatisticsByCustomer())
 print(om.getOrderCosts())
